@@ -1,7 +1,7 @@
 const express = require('express')
 const app=express()
 const router=express.Router()
-const port=3636
+// const port=3636
 
 const mainPageRouter= require("./routes/portfolio")
 const aboutRouter= require("./routes/about")
@@ -19,8 +19,10 @@ app.use('/assets', express.static('assets')) // css goes here
 app.use( express.static("public") ) // pictures go here
 
 
-app.listen(port, ()=>{
-    console.log(`app listening at http://localhost:${port}`)
-})
+// app.listen(port, ()=>{
+//     console.log(`app listening at http://localhost:${port}`)
+// })
 
+app.listen(process.env.port || 3636)
+console.log("localhost:3636")
 
