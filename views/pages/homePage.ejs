@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Jason Calle's Bio</title>
+    <link href="/assets/styles2.css" type="text/css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+    <header>
+
+      <div class="navbar" >
+          <div class="leftIcons">
+            <a href="https://github.com/jcalle0000"> <i class="fa fa-github" style="font-size:36px"></i> </a>
+            <a href="https://www.linkedin.com/in/jason-calle/"> <i class="fa fa-linkedin-square" style="font-size:36px"></i> </a>
+          </div>
+        <ul>
+            <li><a href="/">Projects</a></li>
+            <!-- <li><a href="#news">Expertise</a></li> -->
+            <li><a href="/about">About</a></li>
+            <!-- <li><a href="#about">About</a></li> -->
+        </ul>
+    </div>
+      
+    </header>
+    <main>
+
+      <div class="rowImages">
+            <div class="colImages1">
+              <img class="mySlides" src="4.png"/>
+            </div>
+            <div class="colImages2">
+              <img class="mySlides" src="2.png"/>
+            </div>
+            <div class="colImages3">
+              <img class="mySlides" src="3.png"/>
+            </div>
+            <!-- <div class="colImages4">
+              <img class="mySlides" src="advMechatronicsGrp.jpg"/>
+            </div> -->
+            <div class="colImages5">
+              <img class="mySlides" src="1.png"/>
+            </div> 
+      </div>
+        
+  
+        <!-- <button class="w3-button w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+        <button class="w3-button w3-display-right" onclick="plusDivs(+1)">&#10095;</button> -->
+  
+        <!-- script were actually using -->
+        <script>
+          var myIndex = 0;
+          carousel();
+          
+          function carousel() {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            for (i = 0; i < x.length; i++) {
+              x[i].style.display = "none";  
+            }
+            myIndex++;
+            if (myIndex > x.length) {myIndex = 1}    
+            x[myIndex-1].style.display = "block";  
+            setTimeout(carousel, 2000);    
+          }
+          </script> 
+
+
+        <!-- <script>
+          var slideIndex = 1;
+          showDivs(slideIndex);
+          
+          function plusDivs(n) {
+            showDivs(slideIndex += n);
+          }
+          
+          function showDivs(n) {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            if (n > x.length) {slideIndex = 1}
+            if (n < 1) {slideIndex = x.length}
+            for (i = 0; i < x.length; i++) {
+              x[i].style.display = "none";  
+            }
+            x[slideIndex-1].style.display = "block";  
+          }
+          </script> -->
+     
+
+      <div class="experience">
+        <!-- <a href="https://github.com/Jcalle0000/inventoryOOP">  -->
+          <div class="inventoryOOP">
+            <a href="https://github.com/Jcalle0000/inventoryOOP"> 
+              <h3>Inventory Project using OOP</h3> 
+              <i> 
+                  <P>
+                      Used Java's inheritance to create objects for different types
+                      of screen devices to keep track of inventory 
+                  </P>
+                  <P>
+                    Created functions to omit input data with duplicate values
+                </P>
+              </i>
+              <p> <b>Relevant Tech: </b>Java</p>
+            </a>
+            
+            <!-- bg-secondary div -->
+        </div>
+        
+        <div class="SQLproject">
+          <h3>University Database Project - Coming Soon </h3>
+          <i> 
+            <p>Demonstrated design knowledge of various types of relationships</p>
+            <p>Applied use of triggers and stored procedures</p>
+            <p>Constructed UI </p>
+          </i>
+          
+          <b><p>Relevant Tech</b>: Node.js, SQL, express, heroku</p>
+          <!-- bg-secondary div -->
+      </div>
+            <div class="SHPE">
+              <a href="https://mybrary-trail.herokuapp.com/authors">
+                  <h3>Backend Library Project</h3>
+                  <i> 
+                    <p>Created this project to learn about the full cycle
+                      of front end and backend development </p>
+                      
+                    </p>
+                    <p> </p>
+                    
+                  </i>
+                  <b><p>Relevant Tech</b>: Node.js, MongoDB, Javascript, ejs</p>
+              </a>
+            </div>
+
+            <div class="wordPress">
+                <h3>Word Press Cybersecurity Project - Coming Soon</h3>
+                <i> <p>Displayed SQLI weakness</p> </i>
+                <i> <p>Pentesting Development</p> </i>
+                <i> <p>Used Virtual Box to test wordpress 3.1</p> </i>
+                <b><p>Relevant Tech</b>: SQL Injection, PHP</p>
+            </div>
+
+            <div class="SeniorDesign3">
+              <a href="https://docs.google.com/presentation/d/1uYA-YnMYdxkddQ8eYDtGmey4AE0db4oMQ5Rj8-1IzOM/edit#slide=id.p">
+                <h3>Senior Design</h3>
+                <i> <p>Autonmous Robotic Make up Applier</p> </i>
+                <p>Relevant Tech: Python</p>
+                <b><p>Hardware</b>: IntelSense Camera, Uarm Robotic Arm, Arduino, 3D Printing</p>
+              </a>
+          </div>
+
+          <div class="AdvancedMechatronics">
+            <a href="https://docs.google.com/document/d/1S2TBHrU_HBnKXF0MpdB1D9LvZlN7T9Ie9fRBQnM6mPs/edit">
+                <h3>Advanced Mechantronics</h3>
+                <i>
+                  <p>Conducted research on electrical simulation for treatment of small muscle groups
+                  </p>
+                </i>
+                <b><p>Relevant Tech</b>: C++</p>
+                <b><p>Hardware</b>: 3D-Printing, Arduino</p>
+            </a>
+          </div>
+
+          <!-- experience container div -->
+      </div>
+
+        <div class="end">
+          <!-- intro already exist but helps us format -->
+          <!-- <p>I'm currently doing my best to grow my software skills.
+            Contact me if you would like to colloborate on a project
+            together as I'm always trying to grow my skill set
+            and experience. You can find some of my work on my Github Account.
+          </p> -->
+        </div>
+
+    </main>
+    <footer>
+      <div class="container">
+        Site built and maintained by Jason Calle in © 2020 <br>
+        Last revision made 11/4/2020
+        <address>
+            <a class="Link" href="mailto:Jcalle0000@gmail.com">
+              Jcalle0000@gmail.com </a>
+          </address>
+      </div>
+    </footer>
+  </body>
+</html>
+
+<!-- https://github.com/VincentGarreau/particles.js/ -->

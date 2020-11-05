@@ -1,0 +1,50 @@
+header{
+    margin:0 auto;
+    position: relative;
+}
+
+body{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* .navbar li{
+    display: inline;
+    font-size:1.5em;
+    
+} */
+/* .navbar{
+    text-align: center;  
+    padding-top: 5%;
+    padding-bottom: 5%;
+} */
+
+.mainContainer{
+    /* text-align: center; */
+    display:grid;
+    grid-template-columns: 600px 600px;
+    margin-left: 25%;
+    margin-right: 25%;
+
+}
+
+/* Need to vertically align to match with picture */
+.Bio{
+    /* float: left; */
+    text-align: center;
+    grid-row-start: 1;
+    padding-top:10%;
+    /* float: center; */
+    font-size:1.5em;
+    line-height: 1.7em;
+    font-family: inherit;
+}
+
+.Marshak img{
+    display: inline-flex;
+    height:450px;
+    width: 500px;
+    /* float: center; */
+    /* grid-row-start: 1; */
+    /* float: left; */
+    margin-left: 10px;
+}
