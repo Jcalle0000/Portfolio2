@@ -8,10 +8,12 @@ const aboutRouter= require("./routes/about")
 app.use("/about", aboutRouter)
 app.use("/MainPage", mainPageRouter)
 
-app.get('/', (req,res)=>{
+// app.get('/', (req,res)=>{
 
-    res.render('pages/homePage')
-})
+//     res.render('pages/homePage')
+// })
+
+app.use('/', mainPageRouter)
 
 // for our html(EJS) - needed for multiple pages
 app.set('view engine', 'ejs')
