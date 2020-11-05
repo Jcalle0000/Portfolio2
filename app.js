@@ -25,6 +25,6 @@ app.use( express.static("public") ) // pictures go here
 //     console.log(`app listening at http://localhost:${port}`)
 // })
 
-app.listen(process.env.port || 3636)
+app.listen(process.env.PORT || 3636)
 console.log("localhost:3636")
 
