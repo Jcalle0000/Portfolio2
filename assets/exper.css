@@ -1,0 +1,249 @@
+body{
+    font-family: Times;
+    /* transition: all 0.5s ease-in-out; */
+    /* background-color: red; */
+    padding: 5%
+}
+  
+
+
+.link{
+	padding: 15px 30px;
+	margin: 10px;
+	display: inline-block;
+	color: #000;
+	background: #ffce54;
+    text-decoration: none;
+}
+
+.link:hover{
+	text-decoration: none;
+	color: #000;
+}
+
+
+
+@-webkit-keyframes buzz-out-on-hover {
+    10% {
+      -webkit-transform: translateX(3px) rotate(2deg);
+      transform: translateX(3px) rotate(2deg);
+    }
+    20% {
+      -webkit-transform: translateX(-3px) rotate(-2deg);
+      transform: translateX(-3px) rotate(-2deg);
+    }
+    30% {
+      -webkit-transform: translateX(3px) rotate(2deg);
+      transform: translateX(3px) rotate(2deg);
+    }
+    40% {
+      -webkit-transform: translateX(-3px) rotate(-2deg);
+      transform: translateX(-3px) rotate(-2deg);
+    }
+    50% {
+      -webkit-transform: translateX(2px) rotate(1deg);
+      transform: translateX(2px) rotate(1deg);
+    }
+    60% {
+      -webkit-transform: translateX(-2px) rotate(-1deg);
+      transform: translateX(-2px) rotate(-1deg);
+    }
+    70% {
+      -webkit-transform: translateX(2px) rotate(1deg);
+      transform: translateX(2px) rotate(1deg);
+    }
+    80% {
+      -webkit-transform: translateX(-2px) rotate(-1deg);
+      transform: translateX(-2px) rotate(-1deg);
+    }
+    90% {
+      -webkit-transform: translateX(1px) rotate(0);
+      transform: translateX(1px) rotate(0);
+    }
+    100% {
+      -webkit-transform: translateX(-1px) rotate(0);
+      transform: translateX(-1px) rotate(0);
+    }
+  }
+  @keyframes buzz-out-on-hover {
+    10% {
+      -webkit-transform: translateX(3px) rotate(2deg);
+      transform: translateX(3px) rotate(2deg);
+    }
+    20% {
+      -webkit-transform: translateX(-3px) rotate(-2deg);
+      transform: translateX(-3px) rotate(-2deg);
+    }
+    30% {
+      -webkit-transform: translateX(3px) rotate(2deg);
+      transform: translateX(3px) rotate(2deg);
+    }
+    40% {
+      -webkit-transform: translateX(-3px) rotate(-2deg);
+      transform: translateX(-3px) rotate(-2deg);
+    }
+    50% {
+      -webkit-transform: translateX(2px) rotate(1deg);
+      transform: translateX(2px) rotate(1deg);
+    }
+    60% {
+      -webkit-transform: translateX(-2px) rotate(-1deg);
+      transform: translateX(-2px) rotate(-1deg);
+    }
+    70% {
+      -webkit-transform: translateX(2px) rotate(1deg);
+      transform: translateX(2px) rotate(1deg);
+    }
+    80% {
+      -webkit-transform: translateX(-2px) rotate(-1deg);
+      transform: translateX(-2px) rotate(-1deg);
+    }
+    90% {
+      -webkit-transform: translateX(1px) rotate(0);
+      transform: translateX(1px) rotate(0);
+    }
+    100% {
+      -webkit-transform: translateX(-1px) rotate(0);
+      transform: translateX(-1px) rotate(0);
+    }
+  }
+  .buzz-out-on-hover {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  }
+  .buzz-out-on-hover:hover, .buzz-out-on-hover:focus, .buzz-out-on-hover:active {
+    -webkit-animation-name: buzz-out-on-hover;
+    animation-name: buzz-out-on-hover;
+    -webkit-animation-duration: 0.75s;
+    animation-duration: 0.75s;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+  }
+
+  /* Shutter out */
+  /* @import compass */
+
+
+
+  a{ 
+    background-color: #ecf0f1;
+    box-shadow: 0 2px 1px rgba(0,0,0,.2);
+    color: #2980b9;
+    display: block;
+    font-weight: bold;
+    margin-bottom: 20px;
+    padding: 15px 0;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+   .a:hover{
+      color: #fff;
+      box-shadow: 0 2px 1px rgba(0,0,0,.5);
+    }
+
+
+/* //shutter out horizontal effect */
+/* .shutter-out-horizontal{
+  -webkit-transition: color 300ms;
+  transition: color 300ms;
+  position: relative;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+}
+.shutter-out-horizontal:before{ 
+  content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #2098d1;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transform-origin: 50%;
+    transform-origin: 50%;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition: 300ms ease-out;
+    transition: 300ms ease-out;
+  } */
+
+/* 
+  &:hover:before
+    -webkit-transform: scaleX(1)
+    transform: scaleX(1)
+//shutter in vertical effect
+.shutter-in-vertical
+  background-color: #2098d1 !important
+  -webkit-transition: color 300ms
+  transition: color 300ms
+  position: relative
+  -webkit-transform: translateZ(0)
+  transform: translateZ(0)
+  -webkit-backface-visibility: hidden
+  backface-visibility: hidden
+  -moz-osx-font-smoothing: grayscale
+  &:before
+    content: ""
+    position: absolute
+    z-index: -1
+    top: 0
+    bottom: 0
+    left: 0
+    right: 0
+    background: #ecf0f1
+    -webkit-transform: scaleY(1)
+    transform: scaleY(1)
+    -webkit-transform-origin: 50%
+    transform-origin: 50%
+    -webkit-transition-property: transform
+    transition-property: transform
+    -webkit-transition: 300ms ease-out
+    transition: 300ms ease-out
+  &:hover:before
+    -webkit-transform: scaleY(0)
+    transform: scaleY(0) */
+
+/* shutter out vertical effect */
+ .shutter-out-vertical{
+  -webkit-transition: color 300ms;
+  transition: color 300ms;
+  position: relative;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+}
+.shutter-out-vertical:before{
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #2098d1;
+    -webkit-transform: scaleY(0);
+    transform: scaleY(0);
+    -webkit-transform-origin: 50%;
+    transform-origin: 50%;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition: 300ms ease-out;
+    transition: 300ms ease-out;
+  }
+  /* .shutter-out-vertical:before:hover:before{
+    -webkit-transform: scaleY(1);
+    transform: scaleY(1);
+  } */
