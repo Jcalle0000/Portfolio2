@@ -142,36 +142,33 @@ body{
     text-decoration: none;
     text-transform: uppercase;
   }
-   .container a:hover{
+  .container a:hover{
       color: #fff;
       box-shadow: 0 2px 1px rgba(0,0,0,.5);
-    }
+      
+  }
 
-    /* connecting to the a class itself */
-/* shutter out vertical effect */
- .shutter-out-vertical{
-  -webkit-transition: color 300ms;
-  transition: color 300ms;
-  position: relative; /*From here idk how its contributing */
-  /* -webkit-transform: translateZ(0); old method */
-  /* https://developer.mozilla.org/en-US/docs/Web/CSS/@media/-webkit-transition */
-  transition:translateZ(0); /* new method  */
-
-  transform: translateZ(0);
-  /* -webkit-backface-visibility: hidden; */
-  
-  backface-visibility: hidden;
-  -moz-osx-font-smoothing: grayscale; /* Only works with mac*/
+  .shutter-out-vertical{ /* add an a here for the exp*/ 
+    -webkit-transition: color 300ms;
+    transition: color 300ms;
+    position: relative;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
 }
-.shutter-out-vertical:before{
-    content: "some content";
+
+/* .shutter-out-vertical:before a{  */
+  .shutter-out-vertical:before{
+  content: "";
     position: absolute;
     z-index: -1;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
-    background: #2098d1;
+    background:#2098d1;
     -webkit-transform: scaleY(0);
     transform: scaleY(0);
     -webkit-transform-origin: 50%;
@@ -181,7 +178,31 @@ body{
     -webkit-transition: 300ms ease-out;
     transition: 300ms ease-out;
   }
-  .shutter-out-vertical:before :hover::before{
+
+  .shutter-out-vertical:hover:before{
     -webkit-transform: scaleY(1);
     transform: scaleY(1);
   }
+
+  .box {
+    width: 150px;
+    height: 150px;
+    background: red;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    /* -webkit-transition: background-color 2s ease-out; */
+    /* -moz-transition: background-color 2s ease-out; */
+    /* -o-transition: background-color 2s ease-out; */
+    /* transition: background-color 2s ease-out; */
+  }
+  
+  .box:hover {
+    background-color: green;
+    cursor: pointer;
+  }
+  
+
+  /* More resources  */
+  /* https://www.quackit.com/css/css3/properties/css_transition.cfm */
+  /* https://css-tricks.com/almanac/properties/t/transition/ */
