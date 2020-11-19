@@ -130,10 +130,10 @@ body{
 
 
 
-  a{ 
+  .container a{ 
     background-color: #ecf0f1;
-    box-shadow: 0 2px 1px rgba(0,0,0,.2);
-    color: #2980b9;
+    box-shadow: 0 2px 1px rgba(0,0,0,.2); /*shadow underneathh */
+    color: #2980b9; /*font color*/
     display: block;
     font-weight: bold;
     margin-bottom: 20px;
@@ -142,91 +142,29 @@ body{
     text-decoration: none;
     text-transform: uppercase;
   }
-   .a:hover{
+   .container a:hover{
       color: #fff;
       box-shadow: 0 2px 1px rgba(0,0,0,.5);
     }
 
-
-/* //shutter out horizontal effect */
-/* .shutter-out-horizontal{
-  -webkit-transition: color 300ms;
-  transition: color 300ms;
-  position: relative;
-  -webkit-transform: translateZ(0);
-  transform: translateZ(0);
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-  -moz-osx-font-smoothing: grayscale;
-}
-.shutter-out-horizontal:before{ 
-  content: "";
-    position: absolute;
-    z-index: -1;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: #2098d1;
-    -webkit-transform: scaleX(0);
-    transform: scaleX(0);
-    -webkit-transform-origin: 50%;
-    transform-origin: 50%;
-    -webkit-transition-property: transform;
-    transition-property: transform;
-    -webkit-transition: 300ms ease-out;
-    transition: 300ms ease-out;
-  } */
-
-/* 
-  &:hover:before
-    -webkit-transform: scaleX(1)
-    transform: scaleX(1)
-//shutter in vertical effect
-.shutter-in-vertical
-  background-color: #2098d1 !important
-  -webkit-transition: color 300ms
-  transition: color 300ms
-  position: relative
-  -webkit-transform: translateZ(0)
-  transform: translateZ(0)
-  -webkit-backface-visibility: hidden
-  backface-visibility: hidden
-  -moz-osx-font-smoothing: grayscale
-  &:before
-    content: ""
-    position: absolute
-    z-index: -1
-    top: 0
-    bottom: 0
-    left: 0
-    right: 0
-    background: #ecf0f1
-    -webkit-transform: scaleY(1)
-    transform: scaleY(1)
-    -webkit-transform-origin: 50%
-    transform-origin: 50%
-    -webkit-transition-property: transform
-    transition-property: transform
-    -webkit-transition: 300ms ease-out
-    transition: 300ms ease-out
-  &:hover:before
-    -webkit-transform: scaleY(0)
-    transform: scaleY(0) */
-
+    /* connecting to the a class itself */
 /* shutter out vertical effect */
  .shutter-out-vertical{
   -webkit-transition: color 300ms;
   transition: color 300ms;
-  position: relative;
-  -webkit-transform: translateZ(0);
+  position: relative; /*From here idk how its contributing */
+  /* -webkit-transform: translateZ(0); old method */
+  /* https://developer.mozilla.org/en-US/docs/Web/CSS/@media/-webkit-transition */
+  transition:translateZ(0); /* new method  */
+
   transform: translateZ(0);
-  -webkit-backface-visibility: hidden;
+  /* -webkit-backface-visibility: hidden; */
+  
   backface-visibility: hidden;
-  -moz-osx-font-smoothing: grayscale;
+  -moz-osx-font-smoothing: grayscale; /* Only works with mac*/
 }
 .shutter-out-vertical:before{
-    content: "";
+    content: "some content";
     position: absolute;
     z-index: -1;
     top: 0;
@@ -243,7 +181,7 @@ body{
     -webkit-transition: 300ms ease-out;
     transition: 300ms ease-out;
   }
-  /* .shutter-out-vertical:before:hover:before{
+  .shutter-out-vertical:before :hover::before{
     -webkit-transform: scaleY(1);
     transform: scaleY(1);
-  } */
+  }

@@ -21,8 +21,10 @@ header a{
     padding-bottom: 1%;
     width: 100%;
     transition: all 1s ease-in-out;
-    background: #f9f9f9;
+    background-color: #ecf0f1;
+    box-shadow: 0 2px 1px rgba(0,0,0,.2); /*shadow underneathh */
 
+    /* we need to center the icons with the li here */
 }
 
 .navbar li{
@@ -34,8 +36,18 @@ header a{
         position: relative;
         text-transform: uppercase;
         padding-right: 5%;
-            
+            font-weight: bold;         
 }
+
+/* .navnav a{
+    color: #2980b9; font color
+    background-color: #ecf0f1;
+} */
+
+/* .shutter-out-vertical{
+    -webkit-transition: color 300ms;
+  transition: color 300ms;
+} */
 
 /* .navbar:hover{
     width: 500px;
