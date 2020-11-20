@@ -1,0 +1,94 @@
+
+  .container a{ 
+    background-color: #ecf0f1;
+    box-shadow: 0 2px 1px rgba(0,0,0,.2); /*shadow underneathh */
+    color: #2980b9; /*font color*/
+    display: block;
+    font-weight: bold;
+    margin-bottom: 20px;
+    padding: 15px 0;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    /* width: 30%; */
+  }
+  .container a:hover{
+      color: #fff;
+      box-shadow: 0 2px 1px rgba(0,0,0,.5);
+      
+  }
+
+  .shutter-out-vertical{ /* add an a here for the exp*/ 
+    -webkit-transition: color 300ms;
+    transition: color 300ms;
+    position: relative;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* .shutter-out-vertical:before a{  */
+  .shutter-out-vertical:before{
+  content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background:#2098d1;
+    -webkit-transform: scaleY(0);
+    transform: scaleY(0);
+    -webkit-transform-origin: 50%;
+    transform-origin: 50%;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition: 300ms ease-out;
+    transition: 300ms ease-out;
+  }
+
+  .shutter-out-vertical:hover:before{
+    -webkit-transform: scaleY(1);
+    transform: scaleY(1);
+  }
+
+  .Skills{
+    justify-content: center;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  .webC{
+      /* padding-left: 5%; */
+      /* padding-right: 5%; */
+      /*Grid vs columns?*/
+      /* text-align: center; */
+      /* justify-content: center;  Does justify content give automatic padding? */
+      display: grid;
+      
+      grid-template-columns: 10% 10% 10% 10% 10% 10% 10%;
+      grid-column-gap: 2%;
+
+  }
+
+  .CyberTools{
+    display: grid;
+      
+    grid-template-columns: 10% 10% 10% 10%;
+    grid-column-gap: 2%;
+  }
+
+  .CyberTechniques{
+    display: grid;
+    grid-template-columns: 10% 10% 10% 20% 20% 20%;
+    grid-column-gap: 2%;
+  }
+
+  .ProgrammingLanguages{
+    display: grid;
+    grid-template-columns: 10% 10% 20% ;
+    grid-column-gap: 2%;
+  }
+
