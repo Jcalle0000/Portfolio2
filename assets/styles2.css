@@ -1,6 +1,7 @@
 body{
     font-family: Times;
     transition: all 0.5s ease-in-out;
+    /* justify-content: center; */
 }
   
 header{
@@ -200,23 +201,18 @@ footer{
 
 /* about css */
 .mainContainer{
-    
-    /* display: inline; */
-    /* display:grid; */
-    /* grid-template-columns:  50% 50%; want to have a buffer of 5 % on the sides */
-    justify-content: center;    
-    /* align-items: top;  */
+    justify-content: center;  
     padding-left: 5%;
     padding-right: 5%;
+    /* max-width: 80%; */
+    /* padding-bottom: 10px; */
+    /* min-width: 100%; */
+    /* max-width: 1000px; */
+    overflow:auto;/* To prevent over flow of picture being picture than bio*/
+
+    
 }
 
-
-
-/* .mainContainer p{
-    width: 50%;
-    font-size: 1.5em;
-    line-height: 1.7em;
-} */
 
 .biop
 {
@@ -229,11 +225,16 @@ footer{
 }
 
 img.wrap{
-    width: 50%;
+    width: 60%; /*So it readjusts when the screen is smaller */
+    /* max-width: 30%; */
+    max-width: 600px;
+    /* max-height: 50%; */
     float: right;
-    margin-left:5%
-
+    margin-left:2%
 }
 
+img{
+    /* padding-bottom: 10px; */
+}
 
   

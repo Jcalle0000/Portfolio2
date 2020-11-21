@@ -56,20 +56,20 @@
 
   .Skills{
     justify-content: center;
+    width: 90%;
     padding-left: 5%;
     padding-right: 5%;
+    padding-top: 1%;
   }
 
   .webC{
-      /* padding-left: 5%; */
-      /* padding-right: 5%; */
-      /*Grid vs columns?*/
-      /* text-align: center; */
-      /* justify-content: center;  Does justify content give automatic padding? */
+     
       display: grid;
-      
       grid-template-columns: 10% 10% 10% 10% 10% 10% 10%;
+      /* grid-template-columns: auto auto auto auto auto auto auto; */
+
       grid-column-gap: 2%;
+      /* align-content: stretch; */
 
   }
 
@@ -77,18 +77,22 @@
     display: grid;
       
     grid-template-columns: 10% 10% 10% 10%;
+    /* grid-template-columns: auto auto auto auto ; */
     grid-column-gap: 2%;
+
   }
 
   .CyberTechniques{
     display: grid;
     grid-template-columns: 10% 10% 10% 20% 20% 20%;
+    /* grid-template-columns: auto auto auto auto auto auto ; */
     grid-column-gap: 2%;
   }
 
   .ProgrammingLanguages{
     display: grid;
-    grid-template-columns: 10% 10% 20% ;
+    grid-template-columns: 10% 10% 10%;
+    /* grid-template-columns: auto auto auto ; */
     grid-column-gap: 2%;
   }
   
