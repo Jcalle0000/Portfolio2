@@ -18,7 +18,7 @@ app.use('/', mainPageRouter)
 // for our html(EJS) - needed for multiple pages
 app.set('view engine', 'ejs')
 app.use('/assets', express.static('assets')) // css goes here
-app.use( express.static("public") ) // pictures go here
+app.use( express.static("public") ) // pictures go 
 
 
 // app.listen(port, ()=>{
