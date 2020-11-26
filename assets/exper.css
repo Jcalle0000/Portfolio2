@@ -1,208 +1,86 @@
 body{
-    font-family: Times;
-    /* transition: all 0.5s ease-in-out; */
-    /* background-color: red; */
-    padding: 5%
+    margin:0;
+    padding: 0%;
+    box-sizing: border-box;
+    background-color: lightblue;
 }
   
+/*
+  Box sizing sets the total width and height
+  to include any padding 
+*/
 
+/* .main{
+  font-family: "Heebo", 'Times New Roman';
+} */
 
-.link{
-	padding: 15px 30px;
-	margin: 10px;
-	display: inline-block;
-	color: #000;
-	background: #ffce54;
-    text-decoration: none;
+/*This is where our actual content goes*/
+.Landing{
+  min-height: 100vh;
+  padding: 0rem 5rem;
 }
 
-.link:hover{
-	text-decoration: none;
-	color: #000;
+/*vh changes with the size of the window
+1vh=1% of the viewport
+rem units compare with the root font
+*/
+
+nav{
+  display: flex; /*Kinda of centers vertically the h1*/
+  /*Not sure if whats below is needed*/
+  align-content: center;
+  justify-content: space-between;
+  min-height: 10vh;
+}
+
+/*Super Important since things are to the left*/
+
+.nav-links{
+  display: flex;
+  list-style: none;
+}
+
+.nav-links li{
+  padding-left: 10rem; 
+  /*But you have to be careful with the width*/
+  font-size: 1.2rem;
+}
+
+#logo{
+  font-family: "Lobster", cursive;
+  font-weight: lighter;
+  font-size:2rem
 }
 
 
 
-@-webkit-keyframes buzz-out-on-hover {
-    10% {
-      -webkit-transform: translateX(3px) rotate(2deg);
-      transform: translateX(3px) rotate(2deg);
-    }
-    20% {
-      -webkit-transform: translateX(-3px) rotate(-2deg);
-      transform: translateX(-3px) rotate(-2deg);
-    }
-    30% {
-      -webkit-transform: translateX(3px) rotate(2deg);
-      transform: translateX(3px) rotate(2deg);
-    }
-    40% {
-      -webkit-transform: translateX(-3px) rotate(-2deg);
-      transform: translateX(-3px) rotate(-2deg);
-    }
-    50% {
-      -webkit-transform: translateX(2px) rotate(1deg);
-      transform: translateX(2px) rotate(1deg);
-    }
-    60% {
-      -webkit-transform: translateX(-2px) rotate(-1deg);
-      transform: translateX(-2px) rotate(-1deg);
-    }
-    70% {
-      -webkit-transform: translateX(2px) rotate(1deg);
-      transform: translateX(2px) rotate(1deg);
-    }
-    80% {
-      -webkit-transform: translateX(-2px) rotate(-1deg);
-      transform: translateX(-2px) rotate(-1deg);
-    }
-    90% {
-      -webkit-transform: translateX(1px) rotate(0);
-      transform: translateX(1px) rotate(0);
-    }
-    100% {
-      -webkit-transform: translateX(-1px) rotate(0);
-      transform: translateX(-1px) rotate(0);
-    }
-  }
-  @keyframes buzz-out-on-hover {
-    10% {
-      -webkit-transform: translateX(3px) rotate(2deg);
-      transform: translateX(3px) rotate(2deg);
-    }
-    20% {
-      -webkit-transform: translateX(-3px) rotate(-2deg);
-      transform: translateX(-3px) rotate(-2deg);
-    }
-    30% {
-      -webkit-transform: translateX(3px) rotate(2deg);
-      transform: translateX(3px) rotate(2deg);
-    }
-    40% {
-      -webkit-transform: translateX(-3px) rotate(-2deg);
-      transform: translateX(-3px) rotate(-2deg);
-    }
-    50% {
-      -webkit-transform: translateX(2px) rotate(1deg);
-      transform: translateX(2px) rotate(1deg);
-    }
-    60% {
-      -webkit-transform: translateX(-2px) rotate(-1deg);
-      transform: translateX(-2px) rotate(-1deg);
-    }
-    70% {
-      -webkit-transform: translateX(2px) rotate(1deg);
-      transform: translateX(2px) rotate(1deg);
-    }
-    80% {
-      -webkit-transform: translateX(-2px) rotate(-1deg);
-      transform: translateX(-2px) rotate(-1deg);
-    }
-    90% {
-      -webkit-transform: translateX(1px) rotate(0);
-      transform: translateX(1px) rotate(0);
-    }
-    100% {
-      -webkit-transform: translateX(-1px) rotate(0);
-      transform: translateX(-1px) rotate(0);
-    }
-  }
-  .buzz-out-on-hover {
-    display: inline-block;
-    vertical-align: middle;
-    -webkit-transform: perspective(1px) translateZ(0);
-    transform: perspective(1px) translateZ(0);
-    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-  }
-  .buzz-out-on-hover:hover, .buzz-out-on-hover:focus, .buzz-out-on-hover:active {
-    -webkit-animation-name: buzz-out-on-hover;
-    animation-name: buzz-out-on-hover;
-    -webkit-animation-duration: 0.75s;
-    animation-duration: 0.75s;
-    -webkit-animation-timing-function: linear;
-    animation-timing-function: linear;
-    -webkit-animation-iteration-count: 1;
-    animation-iteration-count: 1;
-  }
-
-  /* Shutter out */
-  /* @import compass */
-
-
-
-  .container a{ 
-    background-color: #ecf0f1;
-    box-shadow: 0 2px 1px rgba(0,0,0,.2); /*shadow underneathh */
-    color: #2980b9; /*font color*/
-    display: block;
-    font-weight: bold;
-    margin-bottom: 20px;
-    padding: 15px 0;
-    text-align: center;
-    text-decoration: none;
-    text-transform: uppercase;
-  }
-  .container a:hover{
-      color: #fff;
-      box-shadow: 0 2px 1px rgba(0,0,0,.5);
-      
-  }
-
-  .shutter-out-vertical{ /* add an a here for the exp*/ 
-    -webkit-transition: color 300ms;
-    transition: color 300ms;
-    position: relative;
-    -webkit-transform: translateZ(0);
-    transform: translateZ(0);
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-    -moz-osx-font-smoothing: grayscale;
+/*I dont think this one is necessary*/
+.slider{
+  /* background:rgb(97,105,109); */
+  background:rgb(31, 80, 186);
+  position: fixed;
+  top:0%;
+  left:0%;
+  width: 100%;
+  height: 100%; /*Ends up taking the whole page*/
+  transform:translateY(100%);
 }
 
-/* .shutter-out-vertical:before a{  */
-  .shutter-out-vertical:before{
-  content: "";
-    position: absolute;
-    z-index: -1;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background:#2098d1;
-    -webkit-transform: scaleY(0);
-    transform: scaleY(0);
-    -webkit-transform-origin: 50%;
-    transform-origin: 50%;
-    -webkit-transition-property: transform;
-    transition-property: transform;
-    -webkit-transition: 300ms ease-out;
-    transition: 300ms ease-out;
-  }
+.intro-text{
+  color:rgb(233, 233, 233);
+  font-family: "Heebo", sans-serif;
+  font-size:3rem;
 
-  .shutter-out-vertical:hover:before{
-    -webkit-transform: scaleY(1);
-    transform: scaleY(1);
-  }
+}
 
-  .box {
-    width: 150px;
-    height: 150px;
-    background: red;
-    margin-top: 20px;
-    margin-left: auto;
-    margin-right: auto;
-    /* -webkit-transition: background-color 2s ease-out; */
-    /* -moz-transition: background-color 2s ease-out; */
-    /* -o-transition: background-color 2s ease-out; */
-    /* transition: background-color 2s ease-out; */
-  }
-  
-  .box:hover {
-    background-color: green;
-    cursor: pointer;
-  }
-  
+.hide{
+  background: black;
+  overflow:hidden
+}
 
-  /* More resources  */
-  /* https://www.quackit.com/css/css3/properties/css_transition.cfm */
-  /* https://css-tricks.com/almanac/properties/t/transition/ */
+.hide span{
+  transform:translateY(100%);
+  display:inline-block;
+}
+
+

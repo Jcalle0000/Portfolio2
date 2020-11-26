@@ -1,6 +1,9 @@
 body{
     font-family: Times;
     transition: all 0.5s ease-in-out;
+    margin: 0%;
+    padding:0;
+    /* background-color: lightblue; */
     /* justify-content: center; */
 }
   
@@ -17,43 +20,62 @@ header a{
 }
 
 .navbar{
-    text-align: center;  
+    /* text-align: center;   */
     padding-top: 1%;
+    display: inline-block;
     padding-bottom: 1%;
     width: 100%;
     transition: all 1s ease-in-out;
     background-color: #ecf0f1;
     box-shadow: 0 2px 1px rgba(0,0,0,.2); /*shadow underneathh */
-
+    /* float: left; */
     /* we need to center the icons with the li here */
+    Border: 1px solid black;
+    /* vertical-align: top; */
+
 }
 
-.navbar li{
+.logo{
+    float: left;
+    /* width: 10%; */
+    /* display: flex; */
+
+    vertical-align: middle;
+    /* Border: 1px solid black; */
+    position: relative;
+    /* top:10px; Goes Down by 10 */
+    top:-1px;
+    
+    font-family: "Lobster", cursive;
+    font-weight: lighter;
+    font-size:2rem;
+
+    padding-left:5%
+
+}
+
+
+
+
+.navnav li{
+    /* color: #2980b9; font color
+    background-color: #ecf0f1; */
+    float: right;
     display: inline;
-    /* font-size:1.5em; */
-        /* background:red; */
-        font-size: 24px;
-        font-weight: 400; /*thickness of font */
-        position: relative;
-        text-transform: uppercase;
-        padding-right: 5%;
-            font-weight: bold;         
+    font-size: 24px;
+    font-weight: 400; /*thickness of font */
+    position: relative;
+    text-transform: uppercase;
+    padding-right: 5%;
+    font-weight: bold;
+    /* Border: 1px solid black; */
+    /* vertical-align: top; */
+    position: relative;
+    top:-10px; 
+    /* Goes up by 10 */
 }
 
-/* .navnav a{
-    color: #2980b9; font color
-    background-color: #ecf0f1;
-} */
 
-/* .shutter-out-vertical{
-    -webkit-transition: color 300ms;
-  transition: color 300ms;
-} */
-
-/* .navbar:hover{
-    width: 500px;
-    height: 500px;
-} */
 
 .innerNav{
     /* background-color: red; */
@@ -75,7 +97,8 @@ footer{
 .rowImages{
     display: block;
     /* padding: 50px 10px 0px 50px;  */
-    width:70%;
+    width:100%;
+    max-width: 1500px;
     /* max-height: 50%; */
     /* height: 50%; */
 
@@ -118,18 +141,25 @@ footer{
 
 .experience
   {
-    text-align: center;
+    /* text-align: center; */
     display: grid;
     justify-content: center;
     /* align-content:center; */
     /* grid-template-columns: 600px 600px; */
-    grid-template-columns: 45% 45%;
-    padding-top:2% ;
+    grid-template-columns: 49% 49%;
+    /* max-width: 1500px; */
+    
+    padding-top:1% ;
     
   }
   .experience a {
       color: black;
       text-decoration: none;
+      
+  }
+
+  .experience h3{
+      text-align: center;
   }
 
   /* https://stackoverflow.com/questions/14814745/how-to-center-two-columns-using-css */
@@ -140,22 +170,27 @@ footer{
     background:#f3f3f3;
     grid-row-start:2 ;
     /* transition: width 2s, height 2s; */
-    transition: width 2s, linear;
+    /* transition: width 2s, linear; */
     /* justify-items: center; */
+    padding:2%;
+    padding-left: 5%;
+
   }
-  /* .inventoryOOP:hover{
-    width: 70%;
-    overflow-x: auto;
-  } */
-
-
+  
 
   .SQLproject
   {
     background-color: #fb8c00; /*Blue For Senior Design */
     grid-row-start:1 ;
     /* justify-items: center; */
+     /* transition: width 2s, height 2s; */
+    /* transition: width 2s, linear; */
+    padding:2%;
+    padding-left: 5%;
+  }
 
+  .SQLproject p::after{
+    background-color: black;
   }
   
   .SeniorDesign3
@@ -163,6 +198,9 @@ footer{
     background-color: #37b0f3; /*Blue For Senior Design */
     grid-row-start:3 ;
     /* justify-items: center; */
+    padding:2%;
+    padding-left: 5%;
+
 
   }
 
@@ -171,33 +209,40 @@ footer{
     background-color: #f2d600; /* Trello yellow for advanced Mechantronics */
     grid-row-start:3 ;
     /* justify-items: center; */
-
+    padding:2%;
+    padding-left: 5%;
 }
 .SHPE{
     grid-row-start:2;
     background-color: crimson; /* Black */
     color: black;
+    padding:2%;
+    padding-left: 5%;
 
 }
 .wordPress{
     grid-row-start:1 ;
     background-color: #4caf50; /*Green for Android */
+    padding:2%;
+    padding-left: 5%;
 }
+
+
 
 .leftIcons{
-    float: left;
-    padding-left: 5%;
-    vertical-align: bottom;
-    display: inline-block;
-}
+    float: right;
+    /* padding-right: 2%; */
+    /* display: inline-block; */
+    /* vertical-align: top; */
+    /* Border: 1px solid black; */
+    position: relative;
+    /* top:10px; */
 
-
-
-.rightIcons{
-    float:right;
     padding-right: 5%;
-    
+
 }
+
+
 
 /* about css */
 .mainContainer{
@@ -210,7 +255,6 @@ footer{
     /* max-width: 1000px; */
     overflow:auto;/* To prevent over flow of picture being picture than bio*/
 
-    
 }
 
 
@@ -233,8 +277,6 @@ img.wrap{
     margin-left:2%
 }
 
-img{
-    /* padding-bottom: 10px; */
-}
+
 
   

@@ -65,9 +65,9 @@
   .webC{
      
       display: grid;
-      grid-template-columns: 10% 10% 10% 10% 10% 10% 10%;
+      grid-template-columns: 25% 10% 10% 10% 10% 10% 10%;
       /* grid-template-columns: auto auto auto auto auto auto auto; */
-
+      /* justify-content: flex-start; */
       grid-column-gap: 2%;
       /* align-content: stretch; */
 
@@ -76,22 +76,28 @@
   .CyberTools{
     display: grid;
       
-    grid-template-columns: 10% 10% 10% 10%;
+    grid-template-columns: 25% 10% 20% 20%;
     /* grid-template-columns: auto auto auto auto ; */
+    /* justify-content: space-around; */
+
     grid-column-gap: 2%;
 
   }
 
   .CyberTechniques{
     display: grid;
-    grid-template-columns: 10% 10% 10% 20% 20% 20%;
+    grid-template-columns: 25% 10% 10% 15% 15% 15%;
+    /* justify-content: space-between; */
+
     /* grid-template-columns: auto auto auto auto auto auto ; */
     grid-column-gap: 2%;
   }
 
   .ProgrammingLanguages{
     display: grid;
-    grid-template-columns: 10% 10% 10%;
+    grid-template-columns: 25% 10% 20%;
+    /* justify-content: space-between; */
+
     /* grid-template-columns: auto auto auto ; */
     grid-column-gap: 2%;
   }
