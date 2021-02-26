@@ -49,9 +49,7 @@ header a{
     font-family: "Lobster", cursive;
     font-weight: lighter;
     font-size:2rem;
-
-    padding-left:5%
-
+    padding-left:5%;
 }
 
 
@@ -76,10 +74,6 @@ header a{
 }
 
 
-
-.innerNav{
-    /* background-color: red; */
-}
 
 .end{
     text-align: center;
@@ -166,8 +160,8 @@ footer{
 
   .inventoryOOP
   {
-    background-color: #f3f3f3; /*Blue For Senior Design */
-    background:#f3f3f3;
+    background-color: 	#B0B0B0; /*Blue For Senior Design */
+    /* background:#f3f3f3; */
     grid-row-start:2 ;
     /* transition: width 2s, height 2s; */
     /* transition: width 2s, linear; */
@@ -180,7 +174,7 @@ footer{
 
   .SQLproject
   {
-    background-color: #fb8c00; /*Blue For Senior Design */
+    background-color: 	#D8D8D8; /*Blue For Senior Design */
     grid-row-start:1 ;
     /* justify-items: center; */
      /* transition: width 2s, height 2s; */
@@ -195,7 +189,8 @@ footer{
   
   .SeniorDesign3
   {
-    background-color: #37b0f3; /*Blue For Senior Design */
+    background-color:	#808080; /*Blue For Senior Design */
+    /* color:white; */
     grid-row-start:3 ;
     /* justify-items: center; */
     padding:2%;
@@ -206,23 +201,23 @@ footer{
 
 .AdvancedMechatronics
 {
-    background-color: #f2d600; /* Trello yellow for advanced Mechantronics */
+    background-color: #888888; /* Trello yellow for advanced Mechantronics */
     grid-row-start:3 ;
     /* justify-items: center; */
     padding:2%;
     padding-left: 5%;
 }
 .SHPE{
-    grid-row-start:2;
-    background-color: crimson; /* Black */
-    color: black;
+    grid-row-start:1; /*This will go to one */
+    background-color: #E0E0E0; /* Black */
+    /* color: green; */
     padding:2%;
     padding-left: 5%;
 
 }
 .wordPress{
-    grid-row-start:1 ;
-    background-color: #4caf50; /*Green for Android */
+    grid-row-start:2 ; 
+    background-color: 	#B8B8B8; /*Green for Android */
     padding:2%;
     padding-left: 5%;
 }
@@ -239,6 +234,7 @@ footer{
     /* top:10px; */
 
     padding-right: 5%;
+    max-width:10% ;
 
 }
 
